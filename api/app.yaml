@@ -1,0 +1,36 @@
+AppConfig:
+  Port: 1339
+  AppEnv: dev
+  AppDebug: true
+  GraceWait: 5s
+  PageSize: 10
+  RuntimeRootPath: runtime/
+  ImagePrefixUrl: http://127.0.0.1:1339
+  ImageSavePath: upload/images/
+  ImageMaxSize: 10
+  ImageAllowExt: .jpg,.jpeg,.png
+
+DBConfig:
+  Type: mysql
+  Ip: 127.0.0.1
+  Port: 3306
+  User: root
+  Password: Redhat#1bm
+  Database: cmdb-go
+  Charset: utf8mb4
+  Collation: utf8mb4_unicode_ci
+  MaxIdleConns: 10
+  MaxOpenConns: 200
+  MaxLifetime: 1800s
+  MaxIdleTime: 300s
+  Timeout: 5s
+  ReadTimeout: 5s
+  WriteTimeout: 5s
+  ParseTime: true
+  Loc: Local
+
+RedisConfig:
+#  Addr: 10.9.68.200:6379
+  Addr: 127.0.0.1:6379
+  Password:
+  DB: 0
